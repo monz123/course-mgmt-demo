@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background-color:burlywood;
+    text-align: center;
+    color: black;
+}
+
+.bg-primary{
+    background-color:burlywood !important;
+}
+
+.btn-edit {
+    color: #000;
+    background-color: burlywood;
+    border-color: black;
+}

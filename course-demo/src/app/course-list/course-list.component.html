@@ -1,0 +1,26 @@
+<h2> Course List </h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>COURSE NAME</th>
+            <th>COURSE INSTRUCTOR</th>
+            <th>TYPE OF COURSE</th>
+            <th> NO OF STUDENTS</th>
+            <th> UPDATE COURSE</th>
+            <th> DELETE COURSE</th>
+        </tr> 
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of courses">
+            <td> {{ c.id }}</td>
+            <td> {{ c.course_name }}</td>
+            <td> {{ c.course_instructor }}</td>
+            <td> {{ c.type_of_course }}</td>
+            <td> {{ c.no_of_students }}</td>
+            <td> <button type="button" (click)="updateCourse(c.id)" class="btn btn-edit">  EDIT </button></td>
+            <td> <button type="button" (click)="deleteCourse(c.id)" class="btn btn-edit">  DELETE </button></td>
+
+        </tr>
+    </tbody>
+</table>

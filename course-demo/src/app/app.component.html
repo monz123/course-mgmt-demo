@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-sm bg-primary nav-dark">
+  <ul class="navbar-nav">
+      <li class="nav-item">
+          <a routerLink="courses" routerLinkActive="active" class="nav-link" style="color:black"> Course List</a>
+      </li>
+      <li class="nav-item">
+          <a routerLink="addCourse" routerLinkActive="active" class="nav-link" style="color:black"> Add Course</a>
+      </li>
+  </ul>
+</nav>
+
+<h1 class="text-center"> {{title}}</h1>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<footer class="footer">
+  <div class="container">
+      <p>This is a demo application.</p>
+  </div>
+</footer>
